@@ -2,6 +2,7 @@
 title: Renovateが気になったので、使ってみた
 date: "2022-01-31T22:12:03.284Z"
 description: "食べログのフロントエンドブログを読んでいたら、Renovate を運用したみた！！的な内容の記事があり、気になったので Renovate を調べてみました。"
+tag: "雑記"
 ---
 
 食べログの[フロントエンドブログ](https://note.com/tabelog_frontend/n/nc52a54472e00)を読んでいたら、Renovate を運用したみた！！的な内容の記事があり、気になったので Renovate を調べてみました。
