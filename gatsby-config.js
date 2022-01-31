@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `terryblog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `terry`,
+      summary: `I am a software engineer. I mainly use React, TypeScript`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `てりーのブログです。技術記事を中心にちょこちょこ更新しています。`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `@teriteriteriri`,
+      github: `gunners6518`,
     },
   },
   plugins: [
@@ -105,7 +106,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "terryblog RSS Feed",
           },
         ],
       },
@@ -113,7 +114,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `terryblog`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
