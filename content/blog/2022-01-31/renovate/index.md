@@ -40,12 +40,12 @@ PR の内容を見ると xxx.json のバージョンアップがほとんどな�
 
 ## renovate の構成
 
-```json:renovate.json
+```js
 {
   "extends": ["config:base"],
   "assignAutomerge": true, // autoMergeをonにする
 
-// types系の更新PRをグループ化する
+  // types系の更新PRをグループ化する
   "packageRules": [
     {
       "groupName": "definitelyTyped",
@@ -55,5 +55,5 @@ PR の内容を見ると xxx.json のバージョンアップがほとんどな�
 }
 ```
 
-すると良い感じで PR がマージ splashtop れていくようになった。
+すると良い感じで PR がマージされていくようになった。
 今後の課題として破壊的な変更に対してはどうやって autoMerge を防いでいくかを検討したい。
