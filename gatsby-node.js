@@ -1,6 +1,3 @@
-const markdownTemplate = "app/template/markdown"
-const mdxTemplate = "app/template/mdx"
-const anycmsTemplate = "app/template/anycms"
 const path = require(`path`)
 
 const { createFilePath } = require(`gatsby-source-filesystem`)
