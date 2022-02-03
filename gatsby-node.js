@@ -1,4 +1,8 @@
+const markdownTemplate = "app/template/markdown"
+const mdxTemplate = "app/template/mdx"
+const anycmsTemplate = "app/template/anycms"
 const path = require(`path`)
+
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
@@ -13,6 +17,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       {
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: ASC }
+          filter: { fields: { draft: { eq: false } } }
           limit: 1000
         ) {
           nodes {
