@@ -8,8 +8,6 @@ draft: true
 
 ## 現状
 
-### 現状
-
 - wordpress
   - 執筆は wordpress のエディター
 - xserver（サーバー）
