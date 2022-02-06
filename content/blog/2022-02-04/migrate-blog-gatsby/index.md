@@ -3,7 +3,6 @@ title: 2年半運用した技術ブログをwordpressのからGatsbyに移行す
 date: ""
 description: ""
 tag: ["Gatsby", "ブログ"]
-draft: true
 ---
 
 ## 現状
