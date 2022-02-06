@@ -1,6 +1,6 @@
 ---
 title: 2年半運用した技術ブログをwordpressのからGatsbyに移行する
-date: ""
+date: "2022-03-01"
 description: ""
 tag: ["Gatsby", "ブログ"]
 ---
