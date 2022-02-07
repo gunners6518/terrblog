@@ -2,7 +2,7 @@
 title: xxxを使ってみた
 date: ""
 description: ""
-tag: ""
+tags: ""
 ---
 
 ## xxx

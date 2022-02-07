@@ -2,7 +2,7 @@
 title: 〇〇からxxxに変えてみた
 date: ""
 description: ""
-tag: "git"
+tags: "git"
 ---
 
 ## 〇〇を導入した狙いと現状
