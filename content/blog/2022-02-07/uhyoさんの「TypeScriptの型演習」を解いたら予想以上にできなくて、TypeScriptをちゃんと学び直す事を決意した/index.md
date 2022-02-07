@@ -1,6 +1,6 @@
 ---
 title: uhyoさんの「TypeScriptの型演習」を解いたら予想以上にできなくて、TypeScriptをちゃんと学び直す事を決意した
-date: ""
+date: "2022-02-07"
 description: "フロントエンド業界ではTypeScriptの型に厳格な事で有名なuhyoさん。彼が書いたTypeScriptの型演習問題があったので、腕試しに解いてみたらボロボロになった。ということで2月はTypeScript復習月間としようと思う！的なポエム記事"
 tags: ["TypeScript", "ポエム"]
 ---
