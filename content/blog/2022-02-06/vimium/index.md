@@ -2,7 +2,7 @@
 title: Vimiumでchrome操作したら快適だった！
 date: "2022-02-06"
 description: "Vimiumというchromeをキーボードで扱える拡張を使ったらとても快適だったので、詳細を解説する"
-tag: ["作業効率化"]
+tags: ["作業効率化"]
 ---
 
 ## Vimium とは
