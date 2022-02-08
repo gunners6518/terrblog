@@ -9,7 +9,7 @@ tags: ["TypeScript", "ポエム"]
 https://qiita.com/uhyo/items/e4f54ef3b87afdd65546
 
 
-2 年前の記事だが、ボリューム難易度ともに超充実している。
+2 年前の記事だが、ボリューム・難易度ともに超充実している。
 
 
 昨今のフロントエンドを生業にするなら避けて通れない TypeScript！
