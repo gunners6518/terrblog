@@ -33,14 +33,14 @@ const BlogIndex = ({ data, location }) => {
 
           return (
             <li key={post.fields.slug}>
-              <div className="rounded-lg bg-slate-200 dark:bg-slate-700 p-2">
+              <div className="rounded-lg bg-slate-200 dark:bg-slate-700 p-6">
                 <article itemScope itemType="http://schema.org/Article">
                   <header>
                     <h2>
                       <Link to={post.fields.slug} itemProp="url">
                         <span
                           itemProp="headline"
-                          className="dark:text-gray-300"
+                          className="dark:text-gray-300 text-3xl font-bold"
                         >
                           {title}
                         </span>
@@ -49,6 +49,20 @@ const BlogIndex = ({ data, location }) => {
                     <small className="dark:text-gray-300">
                       {post.frontmatter.date}
                     </small>
+                    <section>
+                      <p
+                        className="dark:text-gray-300"
+                        dangerouslySetInnerHTML={{
+                          __html: post.frontmatter.description || post.excerpt,
+                        }}
+                        itemProp="description"
+                      />
+                    </section>
+                    <button className="rounded-md p-1 bg-gray-400 dark:bg-gray-600 ">
+                      <Link to="/" className="dark:text-gray-300">
+                        全文を見る
+                      </Link>
+                    </button>
                   </header>
                 </article>
               </div>

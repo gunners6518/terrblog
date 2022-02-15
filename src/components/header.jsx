@@ -15,7 +15,7 @@ const Header = ({ title, isRootPath }) => {
     )
   } else {
     header = (
-      <Link className="header-link-home text-white" to="/">
+      <Link to="/" className="header-link-home text-white">
         {title}
       </Link>
     )
