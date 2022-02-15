@@ -2,9 +2,16 @@ import * as React from "react"
 
 const Footer = () => {
   return (
-    <footer className=" text-white bg-indigo-700 text-center">
-      © {new Date().getFullYear()}, terrblog
-    </footer>
+    <>
+      <footer className="dark:text-gray-300 pl-6 text-sm">
+        © {new Date().getFullYear()}, Built with{" "}
+        <a rel="external" href="https://www.gatsbyjs.org" className="underline">
+          Gatsby
+        </a>
+        <br />
+        このサイトはGoogle Analyticsを使用しています。
+      </footer>
+    </>
   )
 }
 

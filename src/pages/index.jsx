@@ -11,9 +11,8 @@ const BlogIndex = ({ data, location }) => {
 
   if (posts.length === 0) {
     return (
-      <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
-        <Bio />
+      <Layout location={location} title={siteTitle} rightSide={<Bio />}>
+        <Seo title="" />
         <p className="dark:text-gray-400">
           No blog posts found. Add markdown posts to "content/blog" (or the
           directory you specified for the "gatsby-source-filesystem" plugin in
@@ -24,23 +23,22 @@ const BlogIndex = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
-      <Bio />
+    <Layout location={location} title={siteTitle} rightSide={<Bio />}>
+      <Seo title="" />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
             <li key={post.fields.slug}>
-              <div className="rounded-lg bg-slate-200 dark:bg-slate-700 p-6">
+              <div className="rounded-lg bg-gray-100 dark:bg-slate-700 p-6">
                 <article itemScope itemType="http://schema.org/Article">
                   <header>
                     <h2>
                       <Link to={post.fields.slug} itemProp="url">
                         <span
                           itemProp="headline"
-                          className="dark:text-gray-300 text-3xl font-bold"
+                          className="dark:text-gray-300 text-xl font-bold"
                         >
                           {title}
                         </span>
@@ -51,18 +49,18 @@ const BlogIndex = ({ data, location }) => {
                     </small>
                     <section>
                       <p
-                        className="dark:text-gray-300"
+                        className="dark:text-gray-300 mt-2"
                         dangerouslySetInnerHTML={{
                           __html: post.frontmatter.description || post.excerpt,
                         }}
                         itemProp="description"
                       />
                     </section>
-                    <button className="rounded-md p-1 bg-gray-400 dark:bg-gray-600 ">
-                      <Link to="/" className="dark:text-gray-300">
+                    <div className="mt-2">
+                      <Link to="/" className="dark:text-gray-300 underline">
                         全文を見る
                       </Link>
-                    </button>
+                    </div>
                   </header>
                 </article>
               </div>
