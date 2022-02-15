@@ -44,7 +44,7 @@ const Bio = () => {
         alt="Profile picture"
       />
       {author?.name && (
-        <p>
+        <p className="dark:text-gray-400">
           <strong>{author.name}</strong> <br />
           {author?.summary || null}
           {` `}
