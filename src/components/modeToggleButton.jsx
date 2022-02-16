@@ -1,16 +1,19 @@
 import * as React from "react"
 
 const ModeToggleButton = () => {
-
   function theme() {
-    document.documentElement.classList.toggle('dark')
+    // Gatsbyのbuildエラー対策
+    if (typeof window !== undefined) {
+      document.documentElement.classList.toggle("dark")
+    }
   }
 
-  return(
-  <button 
-    title="Toggle Theme" 
-    onClick={theme}
-    className="
+  return (
+    <div className="pr-12">
+      <button
+        title="Toggle Theme"
+        onClick={theme}
+        className="
       w-12 
       h-6 
       rounded-full 
@@ -26,9 +29,11 @@ const ModeToggleButton = () => {
       focus:ring-blue-700 
       dark:focus:ring-blue-600 
       focus:border-transparent
-    ">
-    <div id="toggle"
-      className="
+    "
+      >
+        <div
+          id="toggle"
+          className="
         rounded-full 
         w-4 
         h-4 
@@ -41,9 +46,10 @@ const ModeToggleButton = () => {
         transition-all 
         duration-300 
         ease-out
-    ">
+    "
+        ></div>
+      </button>
     </div>
-  </button>
   )
 }
 
