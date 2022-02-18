@@ -1,5 +1,5 @@
 ---
-title: git hisotryからgit graphに乗り換える事にした
+title: git historyからgit graphに乗り換える事にした
 date: "2022-02-13"
 description: "今まで vscode の拡張として git history を使ってきたが、git graph も良さそうなので比較してみた所、大きな差はなかったが git graph の方が UI が見易かったので乗り換える事にした。"
 tags: ["git"]

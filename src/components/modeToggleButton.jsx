@@ -1,7 +1,7 @@
 import * as React from "react"
 
 const ModeToggleButton = () => {
-  function theme() {
+  const theme = () => {
     // Gatsbyのbuildエラー対策
     if (typeof window !== undefined) {
       document.documentElement.classList.toggle("dark")
