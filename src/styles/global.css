@@ -61,27 +61,6 @@ h6 {
   letter-spacing: -0.025em;
 }
 
-/* h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: var(--fontWeight-bold);
-  color:#44403c;
-  margin-top: var(--spacing-2);
-  margin-bottom: var(--spacing-2);
-}
-
-h2.dark,
-h3.dark,
-h4.dark,
-h5.dark,
-h6.dark {
-  font-weight: var(--fontWeight-bold);
-  color: #d1d5db;
-  margin-top: var(--spacing-2);
-  margin-bottom: var(--spacing-2);
-} */
 
 h1 {
   font-weight: var(--fontWeight-black);
@@ -124,8 +103,13 @@ h6 > a {
 }
 
 /* tailwindcss + markdown */
-.markdown p{
-  @apply text-stone-800 dark:text-gray-300 mt-2;
+.markdown p,
+.markdown li{
+  @apply text-stone-800 dark:text-gray-300 ml-8;
+}
+
+.markdown ul {
+  @apply list-disc text-stone-800 dark:text-gray-300 ;
 }
 
 .markdown h2,

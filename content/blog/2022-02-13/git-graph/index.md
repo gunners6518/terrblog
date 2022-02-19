@@ -54,7 +54,7 @@ vscode のソースコード管理のツリー状のアイコンから遷移可�
 ![](https://storage.googleapis.com/zenn-user-upload/dbb4c6734b20-20220213.png)
 差分は前 commit との。
 
-特徴
+特徴として
 
 - UI がシンプルで必要な情報が分かりやすい印象
 - cherry pick や add tag などのコマンド操作が簡単に出来て分かりやすい
