@@ -61,7 +61,7 @@ h6 {
   letter-spacing: -0.025em;
 }
 
-h2,
+/* h2,
 h3,
 h4,
 h5,
@@ -81,7 +81,7 @@ h6.dark {
   color: #d1d5db;
   margin-top: var(--spacing-2);
   margin-bottom: var(--spacing-2);
-}
+} */
 
 h1 {
   font-weight: var(--fontWeight-black);
@@ -121,6 +121,20 @@ h5 > a,
 h6 > a {
   text-decoration: none;
   color: inherit;
+}
+
+/* tailwindcss + markdown */
+.markdown p{
+  @apply text-stone-800 dark:text-gray-300 mt-2;
+}
+
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdownh5,
+.markdown h6 {
+  font-weight: var(--fontWeight-bold);
+  @apply text-stone-800 dark:text-gray-300 mt-2 mb-2;
 }
 
 /* CSS Custom Properties Definitions */

@@ -34,7 +34,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
-          className="text-stone-800 dark:text-gray-300 mt-2"
+          className="markdown"
         />
         <hr />
       </article>
