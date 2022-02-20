@@ -38,18 +38,18 @@ const BlogIndex = ({ data, location }) => {
                       <Link to={post.fields.slug} itemProp="url">
                         <span
                           itemProp="headline"
-                          className="dark:text-gray-300 text-xl font-bold"
+                          className="text-stone-800 dark:text-gray-300 text-xl font-bold"
                         >
                           {title}
                         </span>
                       </Link>
                     </h2>
-                    <small className="dark:text-gray-300">
+                    <small className="text-stone-800 dark:text-gray-300">
                       {post.frontmatter.date}
                     </small>
                     <section>
                       <p
-                        className="dark:text-gray-300 mt-2"
+                        className="text-stone-800 dark:text-gray-300 mt-2"
                         dangerouslySetInnerHTML={{
                           __html: post.frontmatter.description || post.excerpt,
                         }}
@@ -57,7 +57,10 @@ const BlogIndex = ({ data, location }) => {
                       />
                     </section>
                     <div className="mt-2">
-                      <Link to="/" className="dark:text-gray-300 underline">
+                      <Link
+                        to={post.fields.slug}
+                        className="text-stone-800 dark:text-gray-300 underline"
+                      >
                         全文を見る
                       </Link>
                     </div>
