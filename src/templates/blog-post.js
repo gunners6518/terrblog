@@ -23,7 +23,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <header>
           <h1
             itemProp="headline"
-            className="text-stone-800 dark:text-gray-300 text-3xl font-bold"
+            className="text-stone-800 dark:text-gray-300 text-4xl font-bold"
           >
             {post.frontmatter.title}
           </h1>
