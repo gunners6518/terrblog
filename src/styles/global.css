@@ -260,8 +260,9 @@ table thead tr th {
 /* Link */
 
 a {
-  color: var(--color-primary);
+  @apply text-sky-400/100 dark:text-white underline
 }
+
 
 a:hover,
 a:focus {
