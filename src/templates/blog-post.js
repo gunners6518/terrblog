@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import moment from "moment"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -27,8 +28,8 @@ const BlogPostTemplate = ({ data, location }) => {
           >
             {post.frontmatter.title}
           </h1>
-          <p className="text-stone-800 dark:text-gray-300">
-            {post.frontmatter.date}
+          <p className="text-stone-800 dark:text-gray-300 font-bold">
+            {moment(post.frontmatter.date).format(`YYYY年MM月DD日`)}
           </p>
         </header>
         <section
