@@ -2,7 +2,7 @@
 title: Gatsbyのブログで日本時間の日付表示をする
 date: "2022-02-23"
 description: "Gatsbyのテンプレートのgatsby-starter-blogでは初期状態で英語での日付表示になっている。これを日本語での日付表記に変更する方法をまとめた。"
-tags: "[Gatsby]"
+tags: ["Gatsby"]
 ---
 
 Gatsby のテンプレートの [gatsby-starter-blog](gatsby-starter-blog) では初期状態で英語での日付表示になっている。  
