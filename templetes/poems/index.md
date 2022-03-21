@@ -2,7 +2,7 @@
 title: xxxを使ってみた
 date: ""
 description: ""
-tags: "git"
+tags: ["git"]
 ---
 
 ## まとめ

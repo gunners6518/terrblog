@@ -2,7 +2,7 @@
 title: The State of JS 2021を読んでみた
 date: "2022-03-11"
 description: "The State of Jsとは年に1回の大規模アンケート結果の報告レポートで流行りのライブラリやトレンド技術がざっくりと掴むことが出来る。2021年版が公開されていたので、一通り読んでみた。"
-tags: "frontend"
+tags: ["frontend"]
 ---
 
 ## The State of Js とは
