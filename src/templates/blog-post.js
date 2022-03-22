@@ -28,9 +28,20 @@ const BlogPostTemplate = ({ data, location }) => {
           >
             {post.frontmatter.title}
           </h1>
-          <p className="text-stone-800 dark:text-gray-300 font-bold">
-            {moment(post.frontmatter.date).format(`YYYY年MM月DD日`)}
-          </p>
+          <div className="mb-4">
+            <small className="ml-4 text-stone-800 dark:text-gray-300">
+              {moment(post.frontmatter.date).format(`YYYY年MM月DD日`)}
+            </small>
+            <small className="text-stone-800 dark:text-gray-300">
+              {post.frontmatter.tags.map(item => {
+                return (
+                  <span className="font-bold px-3 py-1 ml-2 rounded-full text-gray-500 bg-gray-200 align-center w-max cursor-pointer">
+                    # {item}
+                  </span>
+                )
+              })}
+            </small>
+          </div>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -89,6 +100,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
         description
       }
     }
