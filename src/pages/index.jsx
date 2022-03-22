@@ -52,7 +52,7 @@ const BlogIndex = ({ data, location }) => {
                       {post.frontmatter.tags.map(item => {
                         return (
                           <span className="font-bold px-2 py-1 ml-2 rounded-full text-gray-500 bg-gray-200 align-center w-max cursor-pointer">
-                            {item}
+                            # {item}
                           </span>
                         )
                       })}
