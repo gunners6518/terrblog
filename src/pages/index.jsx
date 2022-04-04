@@ -33,7 +33,7 @@ const BlogIndex = ({ data, location }) => {
             const title = post.frontmatter.title || post.fields.slug
             return (
               <li key={post.fields.slug}>
-                <div className="rounded-lg bg-gray-100 dark:bg-slate-700 p-6">
+                <div className="rounded-lg bg-gray-100 dark:bg-slate-700 p-6 m-4">
                   <article itemScope itemType="http://schema.org/Article">
                     <header>
                       <h2>
