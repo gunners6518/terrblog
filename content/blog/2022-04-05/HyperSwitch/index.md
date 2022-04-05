@@ -9,7 +9,7 @@ tags: ["ツール"]
 
 [![Image from Gyazo](https://i.gyazo.com/c4f1f3f949d335e3e89297a9107b2079.gif)](https://gyazo.com/c4f1f3f949d335e3e89297a9107b2079)
 
-そんな状態を以下のようなウィンドウ単位での切り替えに変えてくれる「HyperSwitch」について紹介していく。
+そんな状態を以下のようなウィンドウ単位での切り替えに変えてくれる「[HyperSwitch](https://bahoom.com/hyperswitch)」について紹介していく。
 
 [![Image from Gyazo](https://i.gyazo.com/a470903ff7d8dc3afbdb2846e0fe5145.gif)](https://gyazo.com/a470903ff7d8dc3afbdb2846e0fe5145)
 
