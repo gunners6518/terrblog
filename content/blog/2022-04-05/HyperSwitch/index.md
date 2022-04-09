@@ -20,7 +20,7 @@ https://pikawaka.com/tips/hyper-switch
 
 ## tips
 
-- mac のデフォルトのアプリ切り替えが必要ないなら、「all windows：⌘(COmmand) + Tab」がオススメ
+- mac のデフォルトのアプリ切り替えが必要ないなら、「all windows：⌘(Command) + Tab」がオススメ
 - マルチディスプレイを使用している場合「include windows from other screens」をチェックを入れると全てのウィンドウが表示される
 
 [![Image from Gyazo](https://i.gyazo.com/cc5c83b2c96b3f69d558165fba0300e7.png)](https://gyazo.com/cc5c83b2c96b3f69d558165fba0300e7)
