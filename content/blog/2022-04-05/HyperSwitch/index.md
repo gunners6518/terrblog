@@ -13,19 +13,19 @@ tags: ["ツール"]
 
 [![Image from Gyazo](https://i.gyazo.com/a470903ff7d8dc3afbdb2846e0fe5145.gif)](https://gyazo.com/a470903ff7d8dc3afbdb2846e0fe5145)
 
-# インストール手順
+## インストール手順
 
 こちらの記事に従えば OK  
 https://pikawaka.com/tips/hyper-switch
 
-## tips
+### tips
 
 - mac のデフォルトのアプリ切り替えが必要ないなら、「all windows：⌘(Command) + Tab」がオススメ
 - マルチディスプレイを使用している場合「include windows from other screens」をチェックを入れると全てのウィンドウが表示される
 
 [![Image from Gyazo](https://i.gyazo.com/cc5c83b2c96b3f69d558165fba0300e7.png)](https://gyazo.com/cc5c83b2c96b3f69d558165fba0300e7)
 
-# 使用感
+## 使用感
 
 HyperSwitch を使えば全ウィンドウの切り替えを「⌘(Command) + Tab」で簡単に行えるので、windows を使っていた際に出来ていた事を完全に再現出来る。
 

@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Sidebar from "../components/sidebar"
 import moment from "moment"
 
 const BlogPostTemplate = ({ data, location }) => {
@@ -16,40 +17,45 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article
-        className="blog-post rounded-lg bg-gray-100 dark:bg-slate-700 p-6"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <h1
-            itemProp="headline"
-            className="text-stone-800 dark:text-gray-300 text-4xl font-bold"
-          >
-            {post.frontmatter.title}
-          </h1>
-          <div className="mb-4">
-            <small className="ml-4 text-stone-800 dark:text-gray-300">
-              {moment(post.frontmatter.date).format(`YYYY年MM月DD日`)}
-            </small>
-            <small className="text-stone-800 dark:text-gray-300">
-              {post.frontmatter.tags.map(item => {
-                return (
-                  <span className="font-bold px-3 py-1 ml-2 rounded-full text-gray-500 bg-gray-200 align-center w-max cursor-pointer">
-                    # {item}
-                  </span>
-                )
-              })}
-            </small>
-          </div>
-        </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-          className="markdown"
-        />
-        <hr />
-      </article>
+      <div className="grid grid-cols-6 gap-4">
+        <article
+          className="blog-post col-start-1 col-end-5 rounded-lg bg-gray-100 dark:bg-slate-700 p-6"
+          itemScope
+          itemType="http://schema.org/Article"
+        >
+          <header>
+            <h1
+              itemProp="headline"
+              className="text-stone-800 dark:text-gray-300 text-4xl font-bold"
+            >
+              {post.frontmatter.title}
+            </h1>
+            <div className="mb-4">
+              <small className="ml-4 text-stone-800 dark:text-gray-300">
+                {moment(post.frontmatter.date).format(`YYYY年MM月DD日`)}
+              </small>
+              <small className="text-stone-800 dark:text-gray-300">
+                {post.frontmatter.tags.map(item => {
+                  return (
+                    <span className="font-bold px-3 py-1 ml-2 rounded-full text-gray-500 bg-gray-200 align-center w-max cursor-pointer">
+                      # {item}
+                    </span>
+                  )
+                })}
+              </small>
+            </div>
+          </header>
+          <section
+            dangerouslySetInnerHTML={{ __html: post.html }}
+            itemProp="articleBody"
+            className="markdown"
+          />
+          <hr />
+        </article>
+        <div className="col-end-7 col-span-2">
+          <Sidebar />
+        </div>
+      </div>
       <nav className="blog-post-nav">
         <ul
           style={{
