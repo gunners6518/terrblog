@@ -26,12 +26,12 @@ const BlogPostTemplate = ({ data, location }) => {
           <header>
             <h1
               itemProp="headline"
-              className="text-stone-800 dark:text-gray-300 text-4xl font-bold"
+              className="text-stone-800 dark:text-gray-300 text-2xl font-bold"
             >
               {post.frontmatter.title}
             </h1>
             <div className="mb-4">
-              <small className="ml-4 text-stone-800 dark:text-gray-300">
+              <small className="text-stone-800 dark:text-gray-300">
                 {moment(post.frontmatter.date).format(`YYYY年MM月DD日`)}
               </small>
               <small className="text-stone-800 dark:text-gray-300">
