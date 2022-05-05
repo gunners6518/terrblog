@@ -33,7 +33,7 @@
     "typeface-montserrat": "1.1.13"
   },
   "devDependencies": {
-    "autoprefixer": "10.4.6",
+    "autoprefixer": "10.4.7",
     "gatsby-plugin-postcss": "5.13.0",
     "postcss": "8.4.13",
     "prettier": "2.6.2",
