@@ -5431,10 +5431,10 @@ gatsby-worker@^1.24.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@4.24.5:
-  version "4.24.5"
-  resolved "https://registry.npmjs.org/gatsby/-/gatsby-4.24.5.tgz"
-  integrity sha512-f47r+RQldDkBpmcQqixmvafwEqUNUKvtmov+n04uCKOdfkuiiSMPm2pGAWx3vesfut2Kf7nIVgZLZz9sRjXqKA==
+gatsby@4.24.8:
+  version "4.24.8"
+  resolved "https://registry.npmjs.org/gatsby/-/gatsby-4.24.8.tgz"
+  integrity sha512-dbpAXMpWPv0P3H+xYhK2+XZ+W0xsgvZUvQTYhYEro7jVh9gBJr68tlT4YYH7J+9FThrIcg6MPLN7KLVJp8yyGw==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.15.5"
@@ -5536,6 +5536,7 @@ gatsby@4.24.5:
     graphql "^15.7.2"
     graphql-compose "^9.0.7"
     graphql-playground-middleware-express "^1.7.22"
+    graphql-tag "^2.12.6"
     hasha "^5.2.2"
     invariant "^2.2.4"
     is-relative "^1.0.0"
@@ -5822,7 +5823,7 @@ graphql-playground-middleware-express@^1.7.22:
   dependencies:
     graphql-playground-html "^1.6.30"
 
-graphql-tag@^2.11.0:
+graphql-tag@^2.11.0, graphql-tag@^2.12.6:
   version "2.12.6"
   resolved "https://registry.npmjs.org/graphql-tag/-/graphql-tag-2.12.6.tgz"
   integrity sha512-FdSNcu2QQcWnM2VNvSCCDCVS5PpPqpzgFT8+GXzqJuoDd0CBncxCY278u4mhRO7tMgo2JjgJA5aZ+nWSQ/Z+xg==
@@ -9943,10 +9944,10 @@ table@^6.0.9:
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
 
-tailwindcss@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.2.1.tgz"
-  integrity sha512-Uw+GVSxp5CM48krnjHObqoOwlCt5Qo6nw1jlCRwfGy68dSYb/LwS9ZFidYGRiM+w6rMawkZiu1mEMAsHYAfoLg==
+tailwindcss@3.2.4:
+  version "3.2.4"
+  resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.2.4.tgz"
+  integrity sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==
   dependencies:
     arg "^5.0.2"
     chokidar "^3.5.3"
@@ -9962,7 +9963,7 @@ tailwindcss@3.2.1:
     normalize-path "^3.0.0"
     object-hash "^3.0.0"
     picocolors "^1.0.0"
-    postcss "^8.4.17"
+    postcss "^8.4.18"
     postcss-import "^14.1.0"
     postcss-js "^4.0.0"
     postcss-load-config "^3.1.4"
