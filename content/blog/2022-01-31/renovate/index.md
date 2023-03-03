@@ -49,7 +49,8 @@ PR の内容を見ると xxx.json のバージョンアップがほとんどな�
   "packageRules": [
     {
       "groupName": "definitelyTyped",
-      "matchPackagePrefixes": ["@types/"]
+      "matchPackagePrefixes": ["@types/"],
+      "autoMerge": true,
     }
   ]
 }
